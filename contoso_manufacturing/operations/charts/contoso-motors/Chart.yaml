@@ -7,7 +7,7 @@ appVersion: "1.16.0"
 dependencies:
   - name: opcsimulator
     version: 0.1.0
-    repository: "file:///Users/mrhoads/development/agora/jumpstart-agora-apps/contoso_manufacturing/operations/charts/opc-simulator"
+    repository: "file://../opc-simulator"
   - name: ovms
     version: 0.1.0
-    repository: "file:///Users/mrhoads/development/agora/jumpstart-agora-apps/contoso_manufacturing/operations/charts/ovms"
+    repository: "file://../ovms"
