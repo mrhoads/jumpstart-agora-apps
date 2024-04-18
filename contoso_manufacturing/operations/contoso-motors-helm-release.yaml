@@ -14,8 +14,5 @@ spec:
       retries: 3
   chart:
     spec:
-      chart: contoso-motors
+      chart: ./contoso_manufacturing/charts/contoso-motors
       version: '0.1.0'
-      sourceRef:
-        kind: HelmRepository
-        name: contoso-motors
