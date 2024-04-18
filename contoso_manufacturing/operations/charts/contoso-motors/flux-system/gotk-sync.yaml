@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: manufacturing-helm-chart
+    branch: mfg-flux-troubleshooting
   secretRef:
     name: flux-system
   url: https://github.com/mrhoads/jumpstart-agora-apps.git
