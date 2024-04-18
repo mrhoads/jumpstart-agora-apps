@@ -6,13 +6,6 @@ metadata:
 spec:
   interval: 1m
   releaseName: contoso-motors
-  install:
-    remediation:
-      retries: 3
-  upgrade:
-    remediation:
-      retries: 3
   chart:
     spec:
-      chart: ./contoso_manufacturing/charts/opc-simulator
-      version: '0.1.0'
+      chart: ./contoso_manufacturing/charts/contoso-motors
