@@ -16,3 +16,7 @@ spec:
     spec:
       chart: ./contoso_manufacturing/charts/opc-simulator
       version: '0.1.0'
+      sourceRef:
+        kind: GitRepository
+        name: contoso-motors
+        namespace: default
