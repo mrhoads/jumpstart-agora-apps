@@ -8,4 +8,4 @@ spec:
   releaseName: contoso-motors
   chart:
     spec:
-      chart: ./contoso_manufacturing/charts/contoso-motors
+      chart: ./contoso_manufacturing/operations/charts/contoso-motors
