@@ -8,6 +8,7 @@ metadata:
 spec:
   interval: 1m
   releaseName: contoso-motors-agora
+  targetNamespace: agora
   chart:
     spec:
       chart: ./contoso_manufacturing/operations/charts/contoso-motors
