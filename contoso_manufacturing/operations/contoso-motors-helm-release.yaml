@@ -3,6 +3,8 @@ kind: HelmRelease
 metadata:
   name: contoso-motors-agora
   namespace: default
+  annotations:
+    clusterconfig.azure.com/use-managed-source: "true"
 spec:
   interval: 1m
   releaseName: contoso-motors-agora
