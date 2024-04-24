@@ -22,7 +22,7 @@ spec:
           - name: MQTT_BROKER
             value: {{ .Values.mqBrokerEndpoint }}
           - name: MQTT_PORT
-            value: {{ .Values.mqBrokerEndpointPort }}
+            value: {{ .Values.mqBrokerEndpointPort | quote }}
           - name: MQTT_TOPIC1
             value: "topic/productionline"
           - name: MQTT_TOPIC2
