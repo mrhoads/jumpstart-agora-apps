@@ -20,6 +20,6 @@ spec:
             - name: MQTT_BROKER
               value: {{ .Values.mqBrokerEndpoint }} 
             - name: MQTT_PORT
-              value: {{ .Values.mqBrokerPort }}
+              value: {{ .Values.mqBrokerEndpointPort }}
             - name: FRECUENCY
               value: "10"
