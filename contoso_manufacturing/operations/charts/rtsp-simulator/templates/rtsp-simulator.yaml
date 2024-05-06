@@ -32,10 +32,16 @@ spec:
           - wget
           - "-O"
           - "/samples/helmet.mp4"
-          - https://jsfiles.blob.core.windows.net/video/agora/helmet-detection.mp4
+          - $(DOWNLOAD_URL)
           volumeMounts:
           - name: tmp-samples
             mountPath: /samples
+          env:
+            - name: DOWNLOAD_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-helmet-config
+                  key: DOWNLOAD_URL
       containers:
         - name: virtual-rtsp-helmet
           image: "agoraarmbladev.azurecr.io/kerberos/virtual-rtsp:latest"
@@ -107,10 +113,16 @@ spec:
           - wget
           - "-O"
           - "/samples/welding.mp4"
-          - https://jsfiles.blob.core.windows.net/video/agora/welding.mp4
+          - $(DOWNLOAD_URL)
           volumeMounts:
           - name: tmp-samples
             mountPath: /samples
+          env:
+            - name: DOWNLOAD_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-welding-config
+                  key: DOWNLOAD_URL
       containers:
         - name: virtual-rtsp-welding
           image: "agoraarmbladev.azurecr.io/kerberos/virtual-rtsp:latest"
@@ -119,7 +131,10 @@ spec:
             - containerPort: 8554
           env:
             - name: SOURCE_URL
-              value: "file:///samples/welding.mp4"
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-welding-config
+                  key: SOURCE_URL
           volumeMounts:
             - name: tmp-samples
               mountPath: /samples
@@ -182,10 +197,16 @@ spec:
           - wget
           - "-O"
           - "/samples/pose.mp4"
-          - https://jsfiles.blob.core.windows.net/video/agora/pose-estimation.mp4
+          - $(DOWNLOAD_URL)
           volumeMounts:
           - name: tmp-samples
             mountPath: /samples
+          env:
+            - name: DOWNLOAD_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-pose-config
+                  key: DOWNLOAD_URL
       containers:
         - name: virtual-rtsp-pose
           image: "agoraarmbladev.azurecr.io/kerberos/virtual-rtsp:latest"
@@ -194,7 +215,10 @@ spec:
             - containerPort: 8554
           env:
             - name: SOURCE_URL
-              value: "file:///samples/pose.mp4"
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-pose-config
+                  key: SOURCE_URL
           volumeMounts:
             - name: tmp-samples
               mountPath: /samples
@@ -258,10 +282,16 @@ spec:
           - wget
           - "-O"
           - "/samples/object-detection.mp4"
-          - https://jsfiles.blob.core.windows.net/video/agora/object-detection.mp4
+          - $(DOWNLOAD_URL)
           volumeMounts:
           - name: tmp-samples
             mountPath: /samples
+          env:
+            - name: DOWNLOAD_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-object-config
+                  key: DOWNLOAD_URL
       containers:
         - name: virtual-rtsp-object
           image: "agoraarmbladev.azurecr.io/kerberos/virtual-rtsp:latest"
@@ -270,7 +300,10 @@ spec:
             - containerPort: 8554
           env:
             - name: SOURCE_URL
-              value: "file:///samples/object-detection.mp4"
+              valueFrom:
+                configMapKeyRef:
+                  name: rtsp-object-config
+                  key: SOURCE_URL
           volumeMounts:
             - name: tmp-samples
               mountPath: /samples
