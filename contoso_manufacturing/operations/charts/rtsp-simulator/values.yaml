@@ -12,5 +12,5 @@ rtspModels:
     DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/helmet-detection.mp4"
     SOURCE_URL: "file:///samples/helmet.mp4"
   welding:
-    DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/welding.mp4"
+    DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/NOTHERE_welding.mp4"
     SOURCE_URL: "file:///samples/welding.mp4"
