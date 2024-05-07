@@ -13,5 +13,6 @@ spec:
       chart: ./contoso_manufacturing/operations/charts/contoso-motors
   values:
     rtspModels:
-       DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/NOTHERE_object-detection.mp4"
-       SOURCE_URL: "file:///samples/object-detection.mp4"
+      object:
+        DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/NOTHERE_object-detection.mp4"
+        SOURCE_URL: "file:///samples/object-detection.mp4"
