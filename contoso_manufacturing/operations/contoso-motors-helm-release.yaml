@@ -14,5 +14,5 @@ spec:
   values:
     rtspModels:
       object:
-        DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/NOTHERE_object-detection.mp4"
+        DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/NOTHERE_object-detection_DELETEME.mp4"
         SOURCE_URL: "file:///samples/object-detection.mp4"
