@@ -11,3 +11,4 @@ spec:
   chart:
     spec:
       chart: ./contoso_manufacturing/operations/charts/contoso-motors
+      
