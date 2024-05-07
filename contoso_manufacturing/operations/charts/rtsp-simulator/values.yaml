@@ -3,14 +3,14 @@
 # Declare variables to be passed into your templates.
 rtspModels:
   pose:
-    DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/pose.mp4"
+    DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/pose-estimation.mp4"
     SOURCE_URL: "file:///samples/pose.mp4"
-  objectDetection:
+  object:
     DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/object-detection.mp4"
     SOURCE_URL: "file:///samples/object-detection.mp4"
-  helmetDetection:
+  helmet:
     DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/helmet-detection.mp4"
     SOURCE_URL: "file:///samples/helmet.mp4"
-  weldingDetection:
+  welding:
     DOWNLOAD_URL: "https://jsfiles.blob.core.windows.net/video/agora/welding.mp4"
     SOURCE_URL: "file:///samples/welding.mp4"
