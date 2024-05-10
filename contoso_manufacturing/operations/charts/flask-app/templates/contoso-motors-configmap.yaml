@@ -14,14 +14,14 @@ data:
   config_file.json: |
     {
       "safety-yolo8": {
-        "rtsp_url": "rtsp://{{ .Values.helmetRTSPURL }}/stream",
+        "rtsp_url": "rtsp://{{ .Values.helmetRTSPURL }}",
         "conf_thres": 0.5,
         "iou_thres": 0.5,
         "input_shape": [640, 640],
         "class_names": ["helmet", "head", "person"]
       },
       "yolov8n": {
-        "rtsp_url": "rtsp://{{ .Values.objectRTSPURL }}/stream",
+        "rtsp_url": "rtsp://{{ .Values.objectRTSPURL }}",
         "conf_thres": 0.5,
         "iou_thres": 0.5,
         "input_shape": [640, 640],
