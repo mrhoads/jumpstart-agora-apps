@@ -32,7 +32,7 @@ spec:
             mountPath: /samples
       containers:
         - name: virtual-rtsp
-          image: "agoraarmbladev.azurecr.io/kerberos/virtual-rtsp:latest"
+          image: "jumpstartprod.azurecr.io/kerberos/virtual-rtsp:latest"
           imagePullPolicy: Always
           ports:
             - containerPort: 8554
