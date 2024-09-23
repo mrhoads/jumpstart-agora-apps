@@ -46,7 +46,6 @@ wget https://jumpstartprodsg.blob.core.windows.net/ai-models/yolov8n-pose.xml
 echo "Pulling Footfall"
 mkdir -p /models/footfall/1
 cd /models/footfall/1
-wget https://github.com/nabeelmsft/jumpstart-agora-apps/raw/footfallupdates/contoso_supermarket/developer/footfall/src/models/yolov8n_openvino_model/yolov8n.bin
-wget https://github.com/nabeelmsft/jumpstart-agora-apps/raw/footfallupdates/contoso_supermarket/developer/footfall/src/models/yolov8n_openvino_model/yolov8n.xml
-
+wget https://github.com/nabeelmsft/jumpstart-agora-apps/raw/refs/heads/footfallupdates/contoso_supermarket/developer/footfall/src/models/yolov8n_openvino_model/yolov8n.bin
+wget https://raw.githubusercontent.com/nabeelmsft/jumpstart-agora-apps/refs/heads/footfallupdates/contoso_supermarket/developer/footfall/src/models/yolov8n_openvino_model/yolov8n.xml
 echo "Finished pulling models"
